@@ -1,0 +1,10 @@
+#N canvas 608 65 450 300 10;
+#X obj 121 130 and-3;
+#X obj 120 81 unpack f f f;
+#X floatatom 122 193 5 0 0 0 - - -;
+#X msg 120 48 1 0 1;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 1 1 0 1;
+#X connect 1 2 0 2;
+#X connect 3 0 1 0;
