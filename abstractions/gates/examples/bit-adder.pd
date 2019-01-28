@@ -1,0 +1,79 @@
+#N canvas 557 92 1055 710 16;
+#X obj 69 382 and-3;
+#X obj 69 347 not;
+#X floatatom 69 419 5 0 0 0 - - -;
+#X obj 189 565 or-4;
+#X obj 162 381 and-3;
+#X obj 209 346 not;
+#X floatatom 162 418 5 0 0 0 - - -;
+#X obj 69 110 unpack f f f;
+#X obj 277 381 and-3;
+#X obj 272 344 not;
+#X floatatom 277 418 5 0 0 0 - - -;
+#X obj 371 382 and-3;
+#X floatatom 371 419 5 0 0 0 - - -;
+#X floatatom 189 602 5 0 0 0 - - -;
+#X obj 143 452 bng 20 250 50 0 empty empty empty 17 7 0 10 -257985
+-1 -1;
+#X obj 277 453 bng 20 250 50 0 empty empty empty 17 7 0 10 -257985
+-1 -1;
+#X obj 371 451 bng 20 250 50 0 empty empty empty 17 7 0 10 -257985
+-1 -1;
+#X obj 48 454 bng 20 250 50 0 empty empty empty 17 7 0 10 -232576 -1
+-1;
+#X text 242 565 Ci+1;
+#X text 115 13 Ci;
+#X text 66 13 A;
+#X text 91 13 B;
+#X text 560 95 Binary full adder that perform 1-bit binary addition
+between A and B and carry Ci. The new calculated carry value Ci+1 can
+then be routed to another adder gate.;
+#X text 338 498 Bang(s) is needed here to push the most left hot inlet
+whenever any value in the cold right ones change.;
+#X msg 70 47 0 0 0;
+#X msg 587 49 1 1 1;
+#X msg 141 47 0 0 1;
+#X msg 216 47 0 1 0;
+#X msg 294 47 0 1 1;
+#X msg 369 48 1 0 0;
+#X msg 442 49 1 0 1;
+#X msg 514 49 1 1 0;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 2 0 17 0;
+#X connect 3 0 13 0;
+#X connect 4 0 6 0;
+#X connect 5 0 4 2;
+#X connect 6 0 3 1;
+#X connect 6 0 14 0;
+#X connect 7 0 1 0;
+#X connect 7 0 4 0;
+#X connect 7 0 8 0;
+#X connect 7 0 11 0;
+#X connect 7 1 0 1;
+#X connect 7 1 4 1;
+#X connect 7 1 9 0;
+#X connect 7 1 11 1;
+#X connect 7 2 0 2;
+#X connect 7 2 5 0;
+#X connect 7 2 8 2;
+#X connect 7 2 11 2;
+#X connect 8 0 10 0;
+#X connect 9 0 8 1;
+#X connect 10 0 3 2;
+#X connect 10 0 15 0;
+#X connect 11 0 12 0;
+#X connect 12 0 3 3;
+#X connect 12 0 16 0;
+#X connect 14 0 2 0;
+#X connect 15 0 6 0;
+#X connect 16 0 10 0;
+#X connect 24 0 7 0;
+#X connect 25 0 7 0;
+#X connect 26 0 7 0;
+#X connect 27 0 7 0;
+#X connect 28 0 7 0;
+#X connect 29 0 7 0;
+#X connect 30 0 7 0;
+#X connect 31 0 7 0;
