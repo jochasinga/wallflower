@@ -1,16 +1,60 @@
-#N canvas 710 32 587 444 16;
-#X obj 131 106 or;
-#X obj 264 106 or;
-#X obj 131 33 inlet;
-#X obj 197 32 inlet;
-#X obj 264 32 inlet;
-#X obj 333 32 inlet;
-#X obj 131 263 or;
-#X obj 131 319 outlet;
-#X connect 0 0 6 0;
-#X connect 1 0 6 1;
-#X connect 2 0 0 0;
-#X connect 3 0 0 1;
-#X connect 4 0 1 0;
-#X connect 5 0 1 1;
-#X connect 6 0 7 0;
+#N canvas 6 55 587 691 16;
+#X obj 171 125 or;
+#X obj 329 123 or;
+#X obj 329 31 inlet;
+#X obj 448 31 inlet;
+#X obj 171 223 or;
+#X obj 171 358 outlet;
+#X floatatom 448 71 5 0 0 0 - - -;
+#X floatatom 329 71 5 0 0 0 - - -;
+#X obj 79 31 inlet;
+#X obj 198 31 inlet;
+#X floatatom 198 71 5 0 0 0 - - -;
+#X floatatom 79 71 5 0 0 0 - - -;
+#X obj 79 108 bng 20 250 50 0 empty empty empty 17 7 0 10 -257985 -1
+-1;
+#X obj 212 106 bng 20 250 50 0 empty empty empty 17 7 0 10 -257985
+-1 -1;
+#X obj 302 105 bng 20 250 50 0 empty empty empty 17 7 0 10 -257985
+-1 -1;
+#X obj 448 105 bng 20 250 50 0 empty empty empty 17 7 0 10 -257985
+-1 -1;
+#X obj 184 253 bng 20 250 50 0 empty empty empty 17 7 0 10 -257985
+-1 -1;
+#X obj 301 159 bng 20 250 50 0 empty empty empty 17 7 0 10 -257985
+-1 -1;
+#X obj 147 163 bng 20 250 50 0 empty empty empty 17 7 0 10 -257985
+-1 -1;
+#X floatatom 171 290 5 0 0 0 - - -;
+#X obj 49 36 bng 20 250 50 0 empty empty empty 17 7 0 10 -257985 -1
+-1;
+#X floatatom 329 158 5 0 0 0 - - -;
+#X floatatom 171 163 5 0 0 0 - - -;
+#X obj 329 196 bng 20 250 50 0 empty empty empty 17 7 0 10 -257985
+-1 -1;
+#X connect 0 0 18 0;
+#X connect 0 0 22 0;
+#X connect 1 0 17 0;
+#X connect 1 0 21 0;
+#X connect 2 0 7 0;
+#X connect 3 0 6 0;
+#X connect 4 0 5 0;
+#X connect 4 0 16 0;
+#X connect 4 0 19 0;
+#X connect 6 0 1 1;
+#X connect 6 0 15 0;
+#X connect 7 0 1 0;
+#X connect 7 0 14 0;
+#X connect 8 0 11 0;
+#X connect 9 0 10 0;
+#X connect 10 0 0 1;
+#X connect 10 0 13 0;
+#X connect 11 0 0 0;
+#X connect 11 0 12 0;
+#X connect 12 0 6 0;
+#X connect 15 0 7 0;
+#X connect 20 0 11 0;
+#X connect 21 0 4 1;
+#X connect 21 0 23 0;
+#X connect 22 0 4 0;
+#X connect 23 0 22 0;
