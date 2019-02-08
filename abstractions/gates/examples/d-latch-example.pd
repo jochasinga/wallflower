@@ -1,0 +1,8 @@
+#N canvas 942 39 461 365 12;
+#X floatatom 75 80 1 0 1 0 D - -;
+#X floatatom 121 82 1 0 1 1 WE - -;
+#X obj 75 115 d-latch;
+#X floatatom 75 146 5 0 0 0 - - -;
+#X connect 0 0 2 0;
+#X connect 1 0 2 1;
+#X connect 2 0 3 0;

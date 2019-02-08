@@ -1,9 +1,9 @@
-#N canvas 645 61 576 611 12;
+#N canvas 811 23 576 611 12;
 #X obj 148 363 nand;
 #X obj 215 363 nand, f 5;
 #X obj 148 208 unpack f f;
-#X floatatom 215 387 5 0 1 1 b_(Q) - -;
-#X floatatom 148 387 5 0 1 0 a_(Q') - -;
+#X floatatom 215 387 5 0 1 1 b - -;
+#X floatatom 148 387 5 0 1 0 a - -;
 #X floatatom 148 239 1 0 1 0 S - -;
 #X msg 148 110 1 1;
 #X msg 148 137 0 1;
@@ -17,9 +17,8 @@ of memory. The value a is being set.;
 #X floatatom 215 240 1 0 1 1 R - -;
 #X msg 148 411 set \$1;
 #X floatatom 148 435 5 0 0 0 - - -;
-#X obj 76 388 bng 16 250 50 0 empty empty empty 17 7 0 10 -257985 -1
+#X obj 99 388 bng 16 250 50 0 empty empty empty 17 7 0 10 -257985 -1
 -1;
-#X msg 202 136 0 0;
 #X connect 0 0 4 0;
 #X connect 1 0 3 0;
 #X connect 2 0 5 0;
@@ -37,4 +36,3 @@ of memory. The value a is being set.;
 #X connect 15 0 16 0;
 #X connect 16 0 1 1;
 #X connect 17 0 16 0;
-#X connect 18 0 2 0;

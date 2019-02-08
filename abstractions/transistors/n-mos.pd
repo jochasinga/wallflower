@@ -1,0 +1,11 @@
+#N canvas 0 23 450 300 12;
+#X obj 78 32 inlet;
+#X obj 78 65 bin-filter;
+#X obj 78 199 outlet;
+#X obj 145 127 print;
+#X msg 145 101 \$1 is not a binary digit;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 1 2 0;
+#X connect 1 2 4 0;
+#X connect 4 0 3 0;

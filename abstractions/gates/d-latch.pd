@@ -1,0 +1,34 @@
+#N canvas 699 26 226 378 12;
+#X obj 57 177 nand;
+#X obj 126 177 nand;
+#X floatatom 57 80 1 0 1 0 D - -;
+#X floatatom 126 99 1 0 1 1 WE - -;
+#X floatatom 57 201 5 0 0 0 S - -;
+#X floatatom 126 201 5 0 1 1 R - -;
+#X floatatom 57 265 5 0 1 0 a - -;
+#X floatatom 110 266 5 0 1 1 b - -;
+#X obj 57 240 rs-latch;
+#X obj 151 152 not;
+#X obj 57 49 inlet;
+#X obj 126 49 inlet;
+#X obj 57 296 outlet;
+#X obj 27 97 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 165 95 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 4 0;
+#X connect 1 0 5 0;
+#X connect 2 0 9 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 1;
+#X connect 3 0 1 0;
+#X connect 4 0 8 0;
+#X connect 5 0 8 1;
+#X connect 6 0 12 0;
+#X connect 8 0 6 0;
+#X connect 8 1 7 0;
+#X connect 9 0 1 1;
+#X connect 10 0 2 0;
+#X connect 10 0 13 0;
+#X connect 11 0 3 0;
+#X connect 11 0 14 0;
